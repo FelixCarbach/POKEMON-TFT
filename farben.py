@@ -1,0 +1,112 @@
+import pygame
+import sys
+
+'font = pygame.font.get_fonts()'
+
+#Farben
+schwarz = (0, 0, 0)
+rot= (205,38,38)
+gelb = (255,255,0)
+grün = (0,255,0)
+blau = (0,0,255)
+orange = (255,165,0)
+
+'''font1 = pygame.font.SysFont('freesans', 72)'''
+
+eins1=1
+zwei2=2
+drei3=3
+vier4=4
+sechs6=6
+neun9=9
+zwölf12=12
+achtzehn18=18
+siebenundzwanzig27=27
+sechsunddreißig36=36
+
+eins=1
+zwei=2
+drei=3
+vier=4
+fünf=5
+sechs=6
+sieben=7
+acht=8
+neun=9
+zehn=10
+elf=11
+zwölf=12
+dreizehn=13
+vierzehn=14
+fünfzehn=15
+sechzehn=16
+siebzehn=17
+achtzehn=18
+neunzehn=19
+zwanzig=10
+einundzwanzig=21
+zweiundzwanzig=22
+dreiundzwanzig=23
+vierundzwanzig=24
+fünfundzwanzig=25
+sechsundzwanzig=26
+siebenundzwanzig=27
+achtundzwanzig=28
+neunundzwanzig=29
+dreißig=30
+einunddreißig=31
+zweiunddreißig=32
+dreiunddreißig=33
+vierunddreißig=34
+fünfunddreißig=35
+sechsunddreißig=36
+siebenunddreißig=37
+achtunddreißig=38
+neununddreißig=39
+vierzig=40
+einundvierzig=41
+zweiundvierzig=42
+dreiundvierzig=43
+vierundvierzig=44
+fünfundvierzig=45
+sechsundvierzig=46
+siebenundvierzig=47
+achtundvierzig=48
+neunundvierzig=49
+fünfzig=50
+einundfünfzig=51
+zweiundfünfzig=52
+dreiundfünfzig=53
+vierundfünfzig=54
+fünfundfünfzig=55
+sechsundfünfzig=56
+siebenundfünfzig=57
+achtundfünfzig=58
+neunundfünfzig=59
+sechzig=60
+einundsechzig=61
+zweiundsechzig=62
+dreiundsechzig=63
+vierundsechzig=64
+fünfundsechzig=65
+sechsundsechzig=66
+siebenundsechzig=67
+achtundsechzig=68
+neunundsechzig=69
+siebzig=70
+einundsiebzig=71
+zweiundsiebzig=72
+dreiundsiebzig=73
+vierundsiebzig=74
+fünfundsiebzig=75
+sechsundsiebzig=76
+siebenundsiebzig=77
+achtundsiebzig=78
+neunundsiebzig=79
+achtzig=80
+einundachtzig=81
+zweiundachtzig=82
+dreiundachtzig=83
+vierundachtzig=84
+
+
