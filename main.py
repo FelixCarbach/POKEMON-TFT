@@ -32,8 +32,14 @@ pygame.mixer.music.load("musik/chill.mp3")
 'Screen-Einstellungen'
 screen = pygame.display.set_mode((1500, 800))
 
-'''font1 = pygame.font.SysFont('freesans', 72)
-img1 = font1.render('gold', True, gelb)'''
+
+gold = str(gold)
+
+font1 = pygame.font.SysFont('freesans', 72)
+
+gold_anzeige = font1.render(gold, True, gelb)
+
+
 
 
 mx, my = pygame.mouse.get_pos()
@@ -49,8 +55,9 @@ while True:
 
   screen.blit(reroll, (reroll_x, reroll_y))
   screen.blit(rerollg, (reroll_xg, reroll_yg))
+  
+  screen.blit(gold_anzeige, (0, 100))
 
-  #screen.blit(img1, (500, 500))
 
   "Chill-Musik"
   

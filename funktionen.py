@@ -1483,8 +1483,10 @@ def get_pokemon_pos(pokemon_x, pokemon_y):
   pokemon_pos = pokemon_x, pokemon_y
   return pokemon_pos
 
+#font1 = pygame.font.SysFont('freesans', 72)
+
 #gold_anzeige = font1.render(gold, True, gelb)
 
-def show_Gold(gold_anzeige, screen):
+#def show_Gold(gold_anzeige, screen):
   screen.blit(gold_anzeige, (0, 100))
   return gold_anzeige, screen
