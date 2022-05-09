@@ -544,6 +544,10 @@ makabaja_shop_y1 = 600
 
 'Shop-Slot 2'
 
+fragezeichen = pygame.image.load("Layout_assets/Fragezeichen.png")
+fragezeichen_x1 = 0
+fragezeichen_y1 = 500
+
 serpifeu_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/serpifeu_shop.png")
 serpifeu_shop_x2 = 0
 serpifeu_shop_y2 = 500
@@ -743,7 +747,101 @@ makabaja_shop_x5 = 0
 makabaja_shop_y5 = 200
 
 
+serpiroyal_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/serpiroyal_shop.png")
+serpiroyal_shop_x1 = 150
+serpiroyal_shop_y1 = 0
 
+serpiroyal_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/serpiroyal_shop2.png")
+serpiroyal_shop_x2 = 150
+serpiroyal_shop_y2 = 0
+
+flambirex_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/flambirex_shop.png")
+flambirex_shop_x1 = 150
+flambirex_shop_y1 = 0
+
+flambirex_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/flambirex_shop2.png")
+flambirex_shop_x2 = 150
+flambirex_shop_y2 = 0
+
+admurai_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/admurai_shop.png")
+admurai_shop_x1 = 150
+admurai_shop_y1 = 0
+
+admurai_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/admurai_shop2.png")
+admurai_shop_x2 = 150
+admurai_shop_y2 = 0
+
+matrifol_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/matrifol_shop.png")
+matrifol_shop_x1 = 150
+matrifol_shop_y1 = 0
+
+matrifol_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/matrifol_shop2.png")
+matrifol_shop_x2 = 150
+matrifol_shop_y2 = 0
+
+cerapendra_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/cerapendra_shop.png")
+cerapendra_shop_x1 = 150
+cerapendra_shop_y1 = 0
+
+cerapendra_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/cerapendra_shop2.png")
+cerapendra_shop_x2 = 150
+cerapendra_shop_y2 = 0
+
+meistagrif_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/meistagrif_shop.png")
+meistagrif_shop_x1 = 150
+meistagrif_shop_y1 = 0
+
+meistagrif_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/meistagrif_shop2.png")
+meistagrif_shop_x2 = 150
+meistagrif_shop_y2 = 0
+
+kliklak_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/kliklak_shop.png")
+kliklak_shop_x1 = 150
+kliklak_shop_y1 = 100
+
+kliklak_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/kliklak_shop2.png")
+kliklak_shop_x2 = 150
+kliklak_shop_y2 = 100
+
+sharfax_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/sharfax_shop.png")
+sharfax_shop_x1 = 150
+sharfax_shop_y1 = 100
+
+sharfax_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/sharfax_shop2.png")
+sharfax_shop_x2 = 150
+sharfax_shop_y2 = 100
+
+sedimantur_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/sedimantur_shop.png")
+sedimantur_shop_x1 = 150
+sedimantur_shop_y1 = 100
+
+sedimantur_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/sedimantur_shop2.png")
+sedimantur_shop_x2 = 150
+sedimantur_shop_y2 = 100
+
+stalobor_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/stalobor_shop.png")
+stalobor_shop_x1 = 150
+stalobor_shop_y1 = 100
+
+stalobor_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/stalobor_shop2.png")
+stalobor_shop_x2 = 150
+stalobor_shop_y2 = 100
+
+echnatoll_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/echnatoll_shop.png")
+echnatoll_shop_x1 = 150
+echnatoll_shop_y1 = 100
+
+echnatoll_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/echnatoll_shop2.png")
+echnatoll_shop_x2 = 150
+echnatoll_shop_y2 = 100
+
+rokkaiman_shop1 = pygame.image.load("POKEMON-SHOP_Sprites/rokkaiman_shop.png")
+rokkaiman_shop_x1 = 150
+rokkaiman_shop_y1 = 100
+
+rokkaiman_shop2 = pygame.image.load("POKEMON-SHOP_Sprites/rokkaiman_shop2.png")
+rokkaiman_shop_x2 = 150
+rokkaiman_shop_y2 = 100
 
 
 
@@ -1385,6 +1483,10 @@ makabaja_shop_y3g = 400
 
 'Shop-Slot 4'
 
+fragezeicheng = pygame.image.load("Layout_assets/Fragezeichen.png")
+fragezeichen_x1g = 1350
+fragezeichen_y1g = 300
+
 serpifeu_shop4g = pygame.image.load("POKEMON-SHOP_Sprites/serpifeu_shop.png")
 serpifeu_shop_x4g = 1350
 serpifeu_shop_y4g = 300
@@ -1482,6 +1584,106 @@ rotomurf_shop_y5g = 200
 makabaja_shop5g = pygame.image.load("POKEMON-SHOP_Sprites/makabaja_shop.png")
 makabaja_shop_x5g = 1350
 makabaja_shop_y5g = 200
+
+
+serpiroyal_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/serpiroyal_shop.png")
+serpiroyal_shop_x1g = 1200
+serpiroyal_shop_y1g = 0
+
+serpiroyal_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/serpiroyal_shop2.png")
+serpiroyal_shop_x2g = 1200
+serpiroyal_shop_y2g = 0
+
+flambirex_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/flambirex_shop.png")
+flambirex_shop_x1g = 1200
+flambirex_shop_y1g = 0
+
+flambirex_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/flambirex_shop2.png")
+flambirex_shop_x2g = 1200
+flambirex_shop_y2g = 0
+
+admurai_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/admurai_shop.png")
+admurai_shop_x1g = 1200
+admurai_shop_y1g = 0
+
+admurai_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/admurai_shop2.png")
+admurai_shop_x2g = 1200
+admurai_shop_y2g = 0
+
+matrifol_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/matrifol_shop.png")
+matrifol_shop_x1g = 1200
+matrifol_shop_y1g = 0
+
+matrifol_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/matrifol_shop2.png")
+matrifol_shop_x2g = 1200
+matrifol_shop_y2g = 0
+
+cerapendra_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/cerapendra_shop.png")
+cerapendra_shop_x1g = 1200
+cerapendra_shop_y1g = 0
+
+cerapendra_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/cerapendra_shop2.png")
+cerapendra_shop_x2g = 1200
+cerapendra_shop_y2g = 0
+
+meistagrif_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/meistagrif_shop.png")
+meistagrif_shop_x1g = 1200
+meistagrif_shop_y1g = 0
+
+meistagrif_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/meistagrif_shop2.png")
+meistagrif_shop_x2g = 1200
+meistagrif_shop_y2g = 0
+
+kliklak_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/kliklak_shop.png")
+kliklak_shop_x1g = 1200
+kliklak_shop_y1g = 100
+
+kliklak_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/kliklak_shop2.png")
+kliklak_shop_x2g = 1200
+kliklak_shop_y2g = 100
+
+sharfax_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/sharfax_shop.png")
+sharfax_shop_x1g = 1200
+sharfax_shop_y1g = 100
+
+sharfax_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/sharfax_shop2.png")
+sharfax_shop_x2g = 1200
+sharfax_shop_y2g = 100
+
+sedimantur_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/sedimantur_shop.png")
+sedimantur_shop_x1g = 1200
+sedimantur_shop_y1g = 100
+
+sedimantur_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/sedimantur_shop2.png")
+sedimantur_shop_x2g = 1200
+sedimantur_shop_y2g = 100
+
+stalobor_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/stalobor_shop.png")
+stalobor_shop_x1g = 1200
+stalobor_shop_y1g = 100
+
+stalobor_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/stalobor_shop2.png")
+stalobor_shop_x2g = 1200
+stalobor_shop_y2g = 100
+
+echnatoll_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/echnatoll_shop.png")
+echnatoll_shop_x1g = 1200
+echnatoll_shop_y1g = 100
+
+echnatoll_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/echnatoll_shop2.png")
+echnatoll_shop_x2g = 1200
+echnatoll_shop_y2g = 100
+
+rokkaiman_shop1g = pygame.image.load("POKEMON-SHOP_Sprites/rokkaiman_shop.png")
+rokkaiman_shop_x1g = 1200
+rokkaiman_shop_y1g = 100
+
+rokkaiman_shop2g = pygame.image.load("POKEMON-SHOP_Sprites/rokkaiman_shop2.png")
+rokkaiman_shop_x2g = 1200
+rokkaiman_shop_y2g = 100
+
+
+
 
 
 

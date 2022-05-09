@@ -10,6 +10,7 @@ gelb = (255,255,0)
 grün = (0,255,0)
 blau = (0,0,255)
 orange = (255,165,0)
+weiß = (255, 255, 255)
 
 '''font1 = pygame.font.SysFont('freesans', 72)'''
 

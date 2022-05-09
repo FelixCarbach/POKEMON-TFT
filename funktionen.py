@@ -38,7 +38,13 @@ shop_slot_3_var_epic = randint(1, 3)
 shop_slot_4_var_epic = randint(1, 3)
 shop_slot_5_var_epic = randint(1, 3)
 
-gold = 100
+found1 = False
+found2 = False
+found3 = False
+found4 = False
+
+
+gold = 75
 
 fight = False
 
@@ -54,6 +60,13 @@ if münzwurf == 2:
 
 
 #DEFINIEREN VON FUNKTIONEN
+
+def startGame(spiel):
+  
+  gedrueckteTasten = pygame.key.get_pressed()
+  if gedrueckteTasten[pygame.K_SPACE]:
+    spiel = True
+  return spiel
 
 #Shop-Pokemon darstellen
 
@@ -93,6 +106,8 @@ def show_Pokemon5(pokemon1, pokemon_x1, pokemon_y1, zahl, zahl1, zahl2, screen, 
     
 
 
+
+
 #Pokemon spawnen
 
 #Shop-Slot 1
@@ -107,6 +122,9 @@ def spawn_Pokemon1_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_1_var_common = 0
     shop_slot_1_rar = 0
     gold -= variable3
+    print("")
+    print(gold)
+    print(goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 600 < my < 700 and Level1 == True and shop_slot_1_rar in range (variable1, variable2) and shop_slot_1_var_common == variable and Spawning1 == True and Spawning2 == False and gold >variable3:
     pokemon_x2 = 250
@@ -116,6 +134,8 @@ def spawn_Pokemon1_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_1_var_common = 0
     shop_slot_1_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
     
   
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 600 < my < 700 and Level1 == True and shop_slot_1_rar in range (variable1, variable2) and shop_slot_1_var_common == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and gold >variable3:
@@ -126,6 +146,8 @@ def spawn_Pokemon1_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_1_var_common = 0
     shop_slot_1_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
 
   return Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1, pokemon_y1, pokemon1, pokemon_x2, pokemon_y2, pokemon2, pokemon_x3, pokemon_y3, pokemon3, variable, variable1, variable2, variable3, screen, shop_slot_1_var_common, shop_slot_1_rar, gold
@@ -142,6 +164,8 @@ def spawn_Pokemon2_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_2_var_common = 0
     shop_slot_2_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 500 < my < 600 and Level1 == True and shop_slot_2_rar in range (variable1, variable2) and shop_slot_2_var_common == variable and Spawning1 == True and Spawning2 == False and gold >variable3:
     pokemon_x2 = 250
@@ -151,6 +175,8 @@ def spawn_Pokemon2_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_2_var_common = 0  
     shop_slot_2_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 500 < my < 600 and Level1 == True and shop_slot_2_rar in range (variable1, variable2) and shop_slot_2_var_common == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and gold >variable3:
     pokemon_x3 = 250
@@ -160,6 +186,8 @@ def spawn_Pokemon2_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_2_var_common = 0  
     shop_slot_2_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -184,6 +212,8 @@ def spawn_Pokemon3_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_3_var_common = 0  
     shop_slot_3_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 400 < my < 500 and Level1 == True and shop_slot_3_rar in range (variable1, variable2) and shop_slot_3_var_common == variable and Spawning1 == True and Spawning2 == False and gold >variable3:
     pokemon_x2 = 250
@@ -193,6 +223,8 @@ def spawn_Pokemon3_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_3_var_common = 0
     shop_slot_3_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 400 < my < 500 and Level1 == True and shop_slot_3_rar in range (variable1, variable2) and shop_slot_3_var_common == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and gold >variable3:
     pokemon_x3 = 250
@@ -202,6 +234,8 @@ def spawn_Pokemon3_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_3_var_common = 0  
     shop_slot_3_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -218,7 +252,7 @@ def spawn_Pokemon3_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
 
 def spawn_Pokemon4_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1, pokemon_y1, pokemon1, pokemon_x2, pokemon_y2, pokemon2, pokemon_x3, pokemon_y3, pokemon3, variable, variable1, variable2, variable3, screen, shop_slot_4_var_common, shop_slot_4_rar, gold):
   mx, my = pygame.mouse.get_pos()
-  if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 300 < my < 400 and Level1 == True and shop_slot_4_rar in range (variable1, variable2) and shop_slot_4_var_common == variable and Spawning1 == False and Spawning4 == False and gold >variable3:
+  if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 300 < my < 400 and Level1 == True and shop_slot_4_rar in range (variable1, variable2) and shop_slot_4_var_common == variable and Spawning1 == False and Spawning4 == False and gold > variable3:
     pokemon_x1 = 250
     pokemon_y1 = 645
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -226,6 +260,8 @@ def spawn_Pokemon4_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_4_var_common = 0  
     shop_slot_4_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 300 < my < 400 and Level1 == True and shop_slot_4_rar in range (variable1, variable2) and shop_slot_4_var_common == variable and Spawning1 == True and Spawning2 == False and gold >variable3:
     pokemon_x2 = 250
@@ -235,6 +271,8 @@ def spawn_Pokemon4_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_4_var_common = 0  
     shop_slot_4_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
   
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 300 < my < 400 and Level1 == True and shop_slot_4_rar in range (variable1, variable2) and shop_slot_4_var_common == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and gold >variable3:
     pokemon_x3 = 250
@@ -244,6 +282,8 @@ def spawn_Pokemon4_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_4_var_common = 0  
     shop_slot_4_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -268,6 +308,8 @@ def spawn_Pokemon5_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_5_var_common = 0 
     shop_slot_5_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 200 < my < 300 and Level1 == True and shop_slot_5_rar in range (variable1, variable2) and shop_slot_5_var_common == variable and Spawning1 == True and Spawning2 == False and gold >variable3:
     pokemon_x2 = 250
@@ -277,6 +319,8 @@ def spawn_Pokemon5_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_5_var_common = 0  
     shop_slot_5_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
 
   if pygame.mouse.get_pressed()[0]== True and 0 < mx < 150 and 200 < my < 300 and Level1 == True and shop_slot_5_rar in range (variable1, variable2) and shop_slot_5_var_common == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and gold >variable3:
     pokemon_x3 = 250
@@ -286,6 +330,9 @@ def spawn_Pokemon5_common(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1
     shop_slot_5_var_common = 0 
     shop_slot_5_rar = 0
     gold -= variable3
+    print("")
+    print("Gold linke Seite:" , gold)
+
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -703,6 +750,10 @@ def sell_Pokemon(Spawning, pokemon_x, pokemon_y, zahl, zahl2, gold):
     pokemon_x = zahl
     pokemon_y = 0
     gold += zahl2
+    print("")
+    print("Gold linke Seite:", gold)
+
+    
   return Spawning, pokemon_x, pokemon_y, zahl, zahl2, gold
 
 #Shop rerollen
@@ -739,6 +790,8 @@ def reroll_Shop(shop_slot_1_rar, shop_slot_2_rar, shop_slot_3_rar, shop_slot_4_r
     shop_slot_4_var_epic = randint(1, 3)
     shop_slot_5_var_epic = randint(1, 3)
     gold -= 2
+    print("")
+    print("Gold linke Seite:" , gold)
   
   return shop_slot_1_rar, shop_slot_2_rar, shop_slot_3_rar, shop_slot_4_rar, shop_slot_5_rar, shop_slot_1_var_common, shop_slot_2_var_common, shop_slot_3_var_common, shop_slot_4_var_common, shop_slot_5_var_common, shop_slot_1_var_uncommon, shop_slot_2_var_uncommon, shop_slot_3_var_uncommon, shop_slot_4_var_uncommon, shop_slot_5_var_uncommon, shop_slot_1_var_rare, shop_slot_2_var_rare, shop_slot_3_var_rare, shop_slot_4_var_rare, shop_slot_5_var_rare, shop_slot_1_var_epic, shop_slot_2_var_epic, shop_slot_3_var_epic, shop_slot_4_var_epic, shop_slot_5_var_epic, gold
 
@@ -923,7 +976,7 @@ shop_slot_3_var_epicg = randint(1, 3)
 shop_slot_4_var_epicg = randint(1, 3)
 shop_slot_5_var_epicg = randint(1, 3)
 
-goldg=100
+goldg= 75
 
 #Shop-Pokemon darstellen
 
@@ -985,6 +1038,8 @@ def spawn_Pokemon1_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_1_var_commong = 0
     shop_slot_1_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 600 < my < 700 and Level1 == True and shop_slot_1_rarg in range (variable1, variable2) and shop_slot_1_var_commong == variable and Spawning1 == True and Spawning2 == False and goldg >variable3:
     pokemon_x2 = 1017
@@ -994,6 +1049,8 @@ def spawn_Pokemon1_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_1_var_commong = 0
     shop_slot_1_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
     
   
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 600 < my < 700 and Level1 == True and shop_slot_1_rarg in range (variable1, variable2) and shop_slot_1_var_commong == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and goldg >variable3:
@@ -1004,6 +1061,8 @@ def spawn_Pokemon1_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_1_var_commong = 0
     shop_slot_1_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
 
   return Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x1, pokemon_y1, pokemon1, pokemon_x2, pokemon_y2, pokemon2, pokemon_x3, pokemon_y3, pokemon3, variable, variable1, variable2, variable3, screen, shop_slot_1_var_commong, shop_slot_1_rarg, goldg
@@ -1020,6 +1079,8 @@ def spawn_Pokemon2_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_2_var_commong = 0
     shop_slot_2_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 500 < my < 600 and Level1 == True and shop_slot_2_rarg in range (variable1, variable2) and shop_slot_2_var_commong == variable and Spawning1 == True and Spawning2 == False and goldg >variable3:
     pokemon_x2 = 1017
@@ -1029,6 +1090,8 @@ def spawn_Pokemon2_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_2_var_commong = 0  
     shop_slot_2_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 500 < my < 600 and Level1 == True and shop_slot_2_rarg in range (variable1, variable2) and shop_slot_2_var_commong == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and goldg >variable3:
     pokemon_x3 = 1017
@@ -1038,6 +1101,8 @@ def spawn_Pokemon2_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_2_var_commong = 0  
     shop_slot_2_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -1062,6 +1127,8 @@ def spawn_Pokemon3_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_3_var_commong = 0  
     shop_slot_3_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 400 < my < 500 and Level1 == True and shop_slot_3_rarg in range (variable1, variable2) and shop_slot_3_var_commong == variable and Spawning1 == True and Spawning2 == False and goldg >variable3:
     pokemon_x2 = 1017
@@ -1071,6 +1138,8 @@ def spawn_Pokemon3_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_3_var_commong = 0
     shop_slot_3_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 400 < my < 500 and Level1 == True and shop_slot_3_rarg in range (variable1, variable2) and shop_slot_3_var_commong == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and goldg >variable3:
     pokemon_x3 = 1017
@@ -1080,6 +1149,8 @@ def spawn_Pokemon3_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_3_var_commong = 0  
     shop_slot_3_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -1104,6 +1175,8 @@ def spawn_Pokemon4_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_4_var_commong = 0  
     shop_slot_4_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 300 < my < 400 and Level1 == True and shop_slot_4_rarg in range (variable1, variable2) and shop_slot_4_var_commong == variable and Spawning1 == True and Spawning2 == False and goldg >variable3:
     pokemon_x2 = 1017
@@ -1113,6 +1186,8 @@ def spawn_Pokemon4_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_4_var_commong = 0  
     shop_slot_4_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
   
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 300 < my < 400 and Level1 == True and shop_slot_4_rarg in range (variable1, variable2) and shop_slot_4_var_commong == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and goldg >variable3:
     pokemon_x3 = 1017
@@ -1122,6 +1197,8 @@ def spawn_Pokemon4_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_4_var_commong = 0  
     shop_slot_4_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -1146,6 +1223,8 @@ def spawn_Pokemon5_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_5_var_commong = 0  
     shop_slot_5_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 200 < my < 300 and Level1 == True and shop_slot_5_rarg in range (variable1, variable2) and shop_slot_5_var_commong == variable and Spawning1 == True and Spawning2 == False and goldg >variable3:
     pokemon_x2 = 1017
@@ -1155,6 +1234,8 @@ def spawn_Pokemon5_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_5_var_commong = 0 
     shop_slot_5_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if pygame.mouse.get_pressed()[0]== True and 1350 < mx < 1500 and 200 < my < 300 and Level1 == True and shop_slot_5_rarg in range (variable1, variable2) and shop_slot_5_var_commong == variable and Spawning1 == True and Spawning2 == True and Spawning3 == False and goldg >variable3:
     pokemon_x3 = 1017
@@ -1164,6 +1245,8 @@ def spawn_Pokemon5_commong(Spawning1, Spawning2, Spawning3, Spawning4, pokemon_x
     shop_slot_5_var_commong = 0  
     shop_slot_5_rarg = 0
     goldg -= variable3
+    print("")
+    print("Gold rechte Seite:" , goldg)
 
   if Spawning1:
     screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
@@ -1456,6 +1539,8 @@ shop_slot_1_var_uncommong, shop_slot_2_var_uncommong, shop_slot_3_var_uncommong,
     shop_slot_4_var_epicg = randint(1, 3)
     shop_slot_5_var_epicg = randint(1, 3)
     goldg-=2
+    print("")
+    print("Gold rechte Seite:" , goldg)
   
   return shop_slot_1_rarg, shop_slot_2_rarg, shop_slot_3_rarg, shop_slot_4_rarg, shop_slot_5_rarg, shop_slot_1_var_commong, shop_slot_2_var_commong, shop_slot_3_var_commong, shop_slot_4_var_commong, shop_slot_5_var_commong, shop_slot_1_var_uncommong, shop_slot_2_var_uncommong, shop_slot_3_var_uncommong, shop_slot_4_var_uncommong, shop_slot_5_var_uncommong, shop_slot_1_var_rareg, shop_slot_2_var_rareg, shop_slot_3_var_rareg, shop_slot_4_var_rareg, shop_slot_5_var_rareg, shop_slot_1_var_epicg, shop_slot_2_var_epicg, shop_slot_3_var_epicg, shop_slot_4_var_epicg, shop_slot_5_var_epicg, goldg
 
@@ -1467,6 +1552,8 @@ def sell_Pokemong(Spawning, pokemon_x, pokemon_y, zahl, zahl2, goldg):
     pokemon_x = zahl
     pokemon_y = 0
     goldg += zahl2
+    print("")
+    print("Gold rechte Seite:" , goldg)
   return Spawning, pokemon_x, pokemon_y, zahl, zahl2, goldg
 
 
@@ -1488,5 +1575,61 @@ def get_pokemon_pos(pokemon_x, pokemon_y):
 #gold_anzeige = font1.render(gold, True, gelb)
 
 #def show_Gold(gold_anzeige, screen):
-  screen.blit(gold_anzeige, (0, 100))
-  return gold_anzeige, screen
+  #screen.blit(gold_anzeige, (0, 100))
+  #return gold_anzeige, screen
+
+zufall = randint(1, 2)
+
+zufall1 = randint(1,3)
+zufall2 = randint(1,3)
+zufall3 = randint(1,3)
+zufall4 = randint(1,3)
+
+zufallg = randint(1, 2)
+
+zufall1g = randint(1,3)
+zufall2g = randint(1,3)
+zufall3g = randint(1,3)
+zufall4g = randint(1,3)
+
+def spiel_Pokemon1(screen, zufall, zufall1, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var):
+  if zufall == zahl:
+    if zufall1 == zahl2:
+      screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
+    if spawning == True:
+      screen. blit(pokemon2, (pokemon_x1, pokemon_y1))
+      var = True
+      
+  return screen, zufall, zufall1, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var
+    
+def spiel_Pokemon2(screen, zufall, zufall2, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var):
+  if zufall == zahl:
+    if zufall2 == zahl2:
+      screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
+    if spawning == True:
+      screen.blit(pokemon2, (pokemon_x1, pokemon_y1))
+      var = True
+      
+  return screen, zufall, zufall2, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var
+
+
+def spiel_Pokemon1g(screen, zufallg, zufall1g, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var):
+  if zufallg == zahl:
+    if zufall1g == zahl2:
+      screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
+    if spawning == True:
+      screen. blit(pokemon2, (pokemon_x1, pokemon_y1))
+      var = True
+      
+  return screen, zufallg, zufall1g, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var
+
+
+def spiel_Pokemon2g(screen, zufallg, zufall2g, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var):
+  if zufallg == zahl:
+    if zufall2g == zahl2:
+      screen.blit(pokemon1, (pokemon_x1, pokemon_y1))
+    if spawning == True:
+      screen.blit(pokemon2, (pokemon_x1, pokemon_y1))
+      var = True
+      
+  return screen, zufallg, zufall2g, zahl, zahl2, pokemon1, pokemon_x1, pokemon_y1, spawning, pokemon2, var
